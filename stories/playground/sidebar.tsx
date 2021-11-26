@@ -27,7 +27,7 @@ const Sidebar = ({ filename }: SidebarProps): JSX.Element => {
         case 'timemachine':
             return (
                 <aside>
-                    <h4>Trapped iMn your time machine!</h4>
+                    <h4>Trapped in your time machine!</h4>
                     <p>
                         One of Windrift's design principles is that it should support "mutable"
                         stories, with content that can shift, sometimes dramatically, in response to
