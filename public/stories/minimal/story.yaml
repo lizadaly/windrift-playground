@@ -1,7 +1,0 @@
-title: A minimal example
-language: en
-chapters:
-  - filename: "chapter1"
-    title: "Chapter title"
-players:
-  - start: "chapter1"

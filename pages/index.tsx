@@ -1,32 +1,12 @@
-import { GetStaticProps } from 'next'
 import Head from 'next/head'
-import fs from 'fs'
-import path from 'path'
 
-import styles from 'public/stories/manual/styles/Index.module.scss'
+import styles from 'public/stories/playground/styles/Index.module.scss'
 
-interface StoryProps {
-    paths: string[]
-}
-export const getStaticProps: GetStaticProps = async () => {
-    const storyDirs = path.join(process.cwd(), 'public/stories')
-    const paths = fs
-        .readdirSync(storyDirs, { withFileTypes: true })
-        .filter((dir) => dir.isDirectory())
-        .map((dir) => dir.name)
-        .flat()
-    return {
-        props: {
-            paths
-        }
-    }
-}
-
-function Index({ paths }: StoryProps): JSX.Element {
+function Index(): JSX.Element {
     return (
         <>
             <Head>
-                <title lang="en">Welcome to Windrift</title>
+                <title lang="en">Welcome to the Windrift Playground</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                 <link
                     href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=EB+Garamond&family=Elsie&family=Roboto&&family=Roboto+Mono&display=block"
@@ -36,7 +16,7 @@ function Index({ paths }: StoryProps): JSX.Element {
             <header className={styles.header}>
                 <nav>
                     <div></div>
-                    <h1>Welcome to Windrift!</h1>
+                    <h1>Welcome to the Windrift Playground!</h1>
                     <div> </div>
                 </nav>
             </header>
@@ -44,32 +24,26 @@ function Index({ paths }: StoryProps): JSX.Element {
                 <nav className={styles.left}></nav>
                 <article className={styles.story}>
                     <p>
-                        This is the default index page for a{' '}
-                        <a href="https://github.com/lizadaly/windrift">Windrift</a> installation.
+                        This is the Windrift Playground, where demo stories extending the
+                        capabilities of the{' '}
+                        <a href="https://github.com/lizadaly/windrift">Windrift</a> hypertext
+                        framework are deployed.
                     </p>
-                    <p>
-                        If you're using the recommended static export process, each story will live
-                        in its own folder and the public will typically not see this page. If you
-                        are deploying Windrift stories using Vercel, or with server-side components,
-                        you'll probably want to customize this.
-                    </p>
-                    <h2>Getting started with Windrift</h2>
-                    <p>
-                        Familiarize yourself with the{' '}
-                        <a href="windrift.app/manual">online manual</a>! A copy of this manual as an
-                        active Windrift story is installed as part of this repository.
-                    </p>
-                    <h3>In this local repository</h3>
-                    <p>
-                        The following stories are currently installed as part of this Windrift
-                        deployment:
-                    </p>
+
                     <ul>
-                        {paths.map((s) => (
-                            <li key={s}>
-                                <a href={`${s}`}>{s}</a>
-                            </li>
-                        ))}
+                        <li>
+                            <a href="/time-machine">Trapped in your Time Machine!</a>—a brief
+                            mutable story demonstrating changing text and images in-place in
+                            response to user input.
+                        </li>
+                        <li>
+                            <a href="/visual-story">A Visual Story</a>—using Windrift choices to
+                            drive a largely visual story, with extensive use of animation.
+                        </li>
+                        <li>
+                            <a href="/house-of-dust">House of Dust</a>—an implementation of a
+                            classic generative digital poem.
+                        </li>
                     </ul>
                 </article>
                 <nav className={styles.right}></nav>

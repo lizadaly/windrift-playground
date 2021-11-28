@@ -4,19 +4,19 @@ interface SidebarProps {
     filename: string
 }
 
-const Demos = (): JSX.Element => {
+export const Demos = (): JSX.Element => {
     return (
         <>
             <h4>Menu</h4>
             <ul>
                 <li>
-                    <Nav text="Trapped in your time machine!" next="timemachine" />
+                    <a href="/time-machine">Trapped in Your Time Machine!</a>
                 </li>
                 <li>
-                    <Nav text="The House of Dust" next="house-of-dust" />
+                    <a href="/visual-story">A Visual Story</a>
                 </li>
                 <li>
-                    <Nav text="A Game of Cards" next="game-of-cards" />
+                    <a href="/house-of-dust">The House of Dust</a>
                 </li>
             </ul>
         </>
@@ -24,10 +24,10 @@ const Demos = (): JSX.Element => {
 }
 const Sidebar = ({ filename }: SidebarProps): JSX.Element => {
     switch (filename) {
-        case 'timemachine':
+        case 'time-machine':
             return (
                 <aside>
-                    <h4>Trapped in your time machine!</h4>
+                    <h4>Trapped in Your Time Machine!</h4>
                     <p>
                         One of Windrift's design principles is that it should support "mutable"
                         stories, with content that can shift, sometimes dramatically, in response to
@@ -83,10 +83,10 @@ const Sidebar = ({ filename }: SidebarProps): JSX.Element => {
                     <Demos />
                 </aside>
             )
-        case 'game-of-cards':
+        case 'visual-story':
             return (
                 <aside>
-                    <h4>A Game of Cards</h4>
+                    <h4>A Visual Story</h4>
                     <p>
                         Interactive fiction can take the form of digital comics or visual novels,
                         and the web platform is ideally suited to this. This silly story

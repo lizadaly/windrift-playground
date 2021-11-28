@@ -1,0 +1,7 @@
+title: House of Dust
+language: en
+chapters:
+  - filename: "house-of-dust"
+    title: "House of Dust"
+players:
+  - start: "house-of-dust"
