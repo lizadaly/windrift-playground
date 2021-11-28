@@ -1,6 +1,6 @@
 describe('Full test of the Time Machine story', () => {
     it('Checks that the story works', () => {
-        cy.visit('/playground')
+        cy.visit('/time-machine')
         cy.get('a:contains("been...")').click()
         cy.get('button:contains("enticing")').click()
         cy.get('button:contains("lever")').click()
