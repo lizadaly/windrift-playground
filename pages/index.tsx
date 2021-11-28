@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-import styles from 'public/stories/playground/styles/Index.module.scss'
+import styles from 'public/styles/Index.module.scss'
 
 function Index(): JSX.Element {
     return (
@@ -9,7 +9,7 @@ function Index(): JSX.Element {
                 <title lang="en">Welcome to the Windrift Playground</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                 <link
-                    href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=EB+Garamond&family=Elsie&family=Roboto&&family=Roboto+Mono&display=block"
+                    href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto+Condensed&family=Smythe&family=Orbitron&family=Noto+Sans+Cuneiform&family=Macondo+Swash+Caps&display=swap"
                     rel="stylesheet"
                 />
             </Head>
@@ -29,20 +29,32 @@ function Index(): JSX.Element {
                         <a href="https://github.com/lizadaly/windrift">Windrift</a> hypertext
                         framework are deployed.
                     </p>
-
+                    <p>
+                        Source code for all stories is free for exploration and use at{' '}
+                        <a href="https://github.com/lizadaly/windrift-playground">
+                            https://github.com/lizadaly/windrift-playground
+                        </a>
+                        .
+                    </p>
                     <ul>
                         <li>
-                            <a href="/time-machine">Trapped in your Time Machine!</a>—a brief
-                            mutable story demonstrating changing text and images in-place in
-                            response to user input.
+                            <p>
+                                <a href="/time-machine">Trapped in Your Time Machine!</a>—a brief
+                                mutable story demonstrating changing text and images in-place in
+                                response to user input.
+                            </p>
                         </li>
                         <li>
-                            <a href="/visual-story">A Visual Story</a>—using Windrift choices to
-                            drive a largely visual story, with extensive use of animation.
+                            <p>
+                                <a href="/visual-story">A Visual Story</a>—using Windrift choices to
+                                drive a largely visual story, with extensive use of animation.
+                            </p>
                         </li>
                         <li>
-                            <a href="/house-of-dust">House of Dust</a>—an implementation of a
-                            classic generative digital poem.
+                            <p>
+                                <a href="/house-of-dust">House of Dust</a>—an implementation of a
+                                classic generative digital poem.
+                            </p>
                         </li>
                     </ul>
                 </article>

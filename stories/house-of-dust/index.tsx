@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import Grid from 'core/components/ui/layouts/grid'
 
-import styles from 'public/stories/playground/styles/Index.module.scss'
+import styles from 'public/styles/Index.module.scss'
 import ResetButton from 'core/components/ui/reset-button'
 import useChapter from 'core/hooks/use-chapter'
 

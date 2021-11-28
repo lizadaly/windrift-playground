@@ -19,6 +19,9 @@ export const Demos = (): JSX.Element => {
                     <a href="/house-of-dust">The House of Dust</a>
                 </li>
             </ul>
+            <p>
+                <a href="https://github.com/lizadaly/windrift-playground">Source code</a>
+            </p>
         </>
     )
 }
