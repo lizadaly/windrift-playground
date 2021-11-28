@@ -14,5 +14,5 @@ jobs:
               with:
                   start: npm run start
                   # quote the url to be safe against YML parsing surprises
-                  wait-on: 'http://localhost:3000/manual'
+                  wait-on: 'http://localhost:3000/'
                   quiet: true

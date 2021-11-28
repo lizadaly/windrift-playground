@@ -1,0 +1,7 @@
+title: "Trapped in your Time Machine"
+language: en
+chapters:
+  - filename: "time-machine"
+    title: "Trapped in your Time Machine!"
+players:
+  - start: "time-machine"

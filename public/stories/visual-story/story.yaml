@@ -1,0 +1,7 @@
+title: A Visual Story
+language: en
+chapters:
+  - filename: "visual-story"
+    title: "A Visual Story"
+players:
+  - start: "visual-story"
