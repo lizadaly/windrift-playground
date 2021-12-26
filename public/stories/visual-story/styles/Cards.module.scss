@@ -124,8 +124,9 @@ $sky-color: rgb(171, 219, 249);
             text-align: center;
         }
         .responses {
-            margin: ($container-height * .25) 5px 0 50px;
+            margin: ($container-height * .25) 50px 0 50px;
             grid-template-columns: 1fr 1fr;
+            font-size: 12px;
         }
     }
     &.card4 {
