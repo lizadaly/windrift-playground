@@ -232,7 +232,7 @@ export const Page: PageType = () => {
                                         '-2500': (
                                             <>
                                                 <p>
-                                                    You confidentally pull the lever, and the
+                                                    You confidently pull the lever, and the
                                                     machine shakes with a vengeful fervor. The dial
                                                     spins faster this time. As it slows, brass bolts
                                                     pop out of the casing and the seams of the
