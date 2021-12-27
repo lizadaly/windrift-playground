@@ -26,6 +26,10 @@ const Index: React.FC = ({ children }) => {
                         name="twitter:description"
                         content="A demo multimedia interactive fiction hypertext story for the Windrift framework"
                     />
+                    <meta
+                        name="twitter:image"
+                        content="https://windrift.app/images/windrift-logo.svg"
+                    />
                 </>
             }
             header={<></>}
