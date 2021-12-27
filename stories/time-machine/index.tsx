@@ -21,14 +21,32 @@ const Index: React.FC = ({ children }) => {
                     />
                     <meta name="twitter:card" content="summary" />
                     <meta name="twitter:creator" content="@liza" />
-                    <meta name="twitter:title" content="Trapped in Your Time Machine!" />
+                    <meta name="twitter:site" content="@liza" />
+                    <meta
+                        name="twitter:title"
+                        content="Trapped in Your Time Machine! (a hypertext demo)"
+                    />
                     <meta
                         name="twitter:description"
                         content="A demo multimedia interactive fiction hypertext story for the Windrift framework"
                     />
+
                     <meta
                         name="twitter:image"
                         content="https://playground.windrift.app/images/time-machine-logo.png"
+                    />
+                    <meta property="og:type" content="website" />
+                    <meta
+                        property="og:description"
+                        content="A demo multimedia interactive fiction hypertext story for the Windrift framework"
+                    />
+                    <meta
+                        property="og:image"
+                        content="https://playground.windrift.app/images/time-machine-logo.png"
+                    />
+                    <meta
+                        property="og:title"
+                        content="Trapped in Your Time Machine! (a hypertext demo)"
                     />
                 </>
             }
