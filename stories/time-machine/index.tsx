@@ -19,16 +19,34 @@ const Index: React.FC = ({ children }) => {
                         href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto+Condensed&family=Smythe&family=Orbitron&family=Noto+Sans+Cuneiform&family=Macondo+Swash+Caps&display=swap"
                         rel="stylesheet"
                     />
-                    <meta name="twitter:card" content="summary" />
+                    <meta name="twitter:card" content="summary_large_image" />
                     <meta name="twitter:creator" content="@liza" />
-                    <meta name="twitter:title" content="Trapped in Your Time Machine!" />
+                    <meta name="twitter:site" content="@liza" />
+                    <meta
+                        name="twitter:title"
+                        content="Trapped in Your Time Machine! (a hypertext demo)"
+                    />
                     <meta
                         name="twitter:description"
                         content="A demo multimedia interactive fiction hypertext story for the Windrift framework"
                     />
+
                     <meta
                         name="twitter:image"
                         content="https://playground.windrift.app/images/time-machine-logo.png"
+                    />
+                    <meta property="og:type" content="website" />
+                    <meta
+                        property="og:description"
+                        content="A demo multimedia interactive fiction hypertext story for the Windrift framework"
+                    />
+                    <meta
+                        property="og:image"
+                        content="https://playground.windrift.app/images/time-machine-logo.png"
+                    />
+                    <meta
+                        property="og:title"
+                        content="Trapped in Your Time Machine! (a hypertext demo)"
                     />
                 </>
             }
