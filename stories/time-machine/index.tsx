@@ -19,7 +19,7 @@ const Index: React.FC = ({ children }) => {
                         href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto+Condensed&family=Smythe&family=Orbitron&family=Noto+Sans+Cuneiform&family=Macondo+Swash+Caps&display=swap"
                         rel="stylesheet"
                     />
-                    <meta name="twitter:card" content="summary" />
+                    <meta name="twitter:card" content="summary_large_image" />
                     <meta name="twitter:creator" content="@liza" />
                     <meta name="twitter:site" content="@liza" />
                     <meta
