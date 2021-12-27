@@ -28,7 +28,7 @@ const Index: React.FC = ({ children }) => {
                     />
                     <meta
                         name="twitter:image"
-                        content="https://windrift.app/images/windrift-logo.svg"
+                        content="https://playground.windrift.app/images/time-machine-logo.png"
                     />
                 </>
             }
